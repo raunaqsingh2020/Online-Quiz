@@ -3,4 +3,4 @@
 > Submission for The Daily Pennsylvanian 2020 Technical Challenge
 
 
-[Live Preview](https://raunaqsingh2020.github.io/Online-Quiz/)
+[Live Preview](https://raunaqsingh2020.github.io/Online-Quiz/){:target="_blank"}.
