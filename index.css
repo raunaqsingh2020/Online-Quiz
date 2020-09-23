@@ -212,6 +212,7 @@ h3 {
   line-height: 1.2;
   text-align: left;
   padding-bottom: 0px;
+  background-color: teal;
   animation: fadeIn ease 1s;
 }
 
