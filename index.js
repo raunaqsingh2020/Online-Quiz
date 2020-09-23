@@ -140,6 +140,8 @@ function showResults(){
         submitButton.innerHTML = 'Retake Quiz'; 
         submitButton.removeEventListener('click', showResults);
         submitButton.addEventListener('click', resetQuiz);
+
+        $('html,body').animate({scrollTop: document.body.scrollHeight},1300); //scroll to bottom
     }
 
 }
