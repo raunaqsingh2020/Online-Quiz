@@ -70,6 +70,7 @@ const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 var resultsCount = new Array(data.results.length).fill(0); //stores number of responses for each option
 var progressPercent = 0.0; //value for progress bar at top
+var contentNotSaved = false; //whether or not user has unsaved content on the page
 
 function buildQuiz(){
     const output = [];
@@ -173,12 +174,15 @@ function resetQuiz(){
     //reset progress bar
     progressPercent = 0.0;
     document.getElementsByClassName('progress-bar').item(0).setAttribute('style','width:'+Number(progressPercent)+'%');
+
+    contentNotSaved = false
 }
   
 //handle selection of any option
 function answerSelected(){
     
     var numResponses = $('input:radio:checked').length
+    contentNotSaved = true
 
     //keep submit button disabled unless all questions have selected answers
     if(numResponses != data.questions.length){
@@ -198,9 +202,17 @@ function answerSelected(){
 
 }
 
+function leavingPage(){ 
+    if(contentNotSaved){
+        return "You have unsaved changes on this page. Do you want to leave this page and discard your changes or stay on this page?";
+    }
+}
+
 buildQuiz();
 
 submitButton.addEventListener('click', showResults);
 submitButton.disabled = true;
 
 document.getElementById("resultCont").style.display = "none"
+
+window.onbeforeunload = leavingPage;
