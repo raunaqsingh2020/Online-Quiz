@@ -200,25 +200,7 @@ h2 {
   grid-template-columns: fit-content(10px);
 }
 
-#resultCont>h3 {
-  display: inline-block;
-  width: 80%; /* of wrapper width */
-  margin: auto;
-  text-align: left;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 100%;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  color: #00171F;
-  line-height: 1.2;
-  padding-bottom: 0px;
-  background-color: teal;
-  animation: fadeIn ease 1s;
-}
 
-/*
 h3 {
   display: block;
   white-space: nowrap;
@@ -233,7 +215,7 @@ h3 {
   padding-bottom: 0px;
   background-color: teal;
   animation: fadeIn ease 1s;
-}*/
+}
 
 .topBar {
   position: -webkit-sticky;
