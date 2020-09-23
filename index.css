@@ -1,0 +1,231 @@
+
+/*---------gradient code from gradient-animator.com---------*/
+
+body {
+  background: linear-gradient(224deg,#E94057,#F27121);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 16s ease infinite;
+  -moz-animation: AnimationName 16s ease infinite;
+  animation: AnimationName 16s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:52% 0%}
+  50%{background-position:49% 100%}
+  100%{background-position:52% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:52% 0%}
+  50%{background-position:49% 100%}
+  100%{background-position:52% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:52% 0%}
+  50%{background-position:49% 100%}
+  100%{background-position:52% 0%}
+}
+
+/*---------gradient code from gradient-animator.com---------*/
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+h1 {
+  display: block;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: #00171F;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+h2 {
+  display: block;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #00171F;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 0px;
+  animation: fadeIn ease 1s;
+}
+
+.container{
+  width: 90%;  
+  height: 85%;
+  padding: 35px;
+  background: transparent;
+  background-color: white; 
+  position: relative;
+  z-index: 1;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.7);
+}
+
+#quiz{
+  padding-bottom: 25px;
+  animation: fadeIn ease 3s;
+}
+
+.question {
+  color: #00171F;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.answers {
+  margin: 0px;
+}
+
+/*all radio buttons (all selectable answers)*/
+.answers input[type="radio"] {
+  opacity: 0.0;
+  position: fixed;
+  width: 0;
+}
+
+/*hovering over unchecked options*/
+.answers .uncheckedLabel:hover {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background-color: rgb(0, 126, 167, 0.6);
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  border: 1px solid rgb(0, 126, 167);
+  color: white;
+  transition: all 0.4s;
+  border-radius: 8px;
+}
+
+/*selected options*/
+.checkedLabel {
+  display: inline-block;
+  width: 100%;
+  background-color: #338FA7;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  border: 1px solid #338FA7;
+  color: white;
+  transition: all 0.4s;
+  border-radius: 8px;
+}
+
+/*unselected options*/
+.uncheckedLabel {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: #333333;
+  border: 1px solid #00171F;
+  border-radius: 8px;
+}
+
+
+#submit {
+  align-self: center;
+  outline: none;
+  border: none;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  min-width: 160px;
+  height: 50px;
+  background-color: #338FA7;
+  border-radius: 25px;
+
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+
+  transition: all 0.4s;
+
+}
+
+#submit:hover {
+  
+  background-color: #333333;
+  transition: all 0.4s;
+
+}
+
+#submit:disabled {
+  
+  background: transparent;
+  background-color: #999;
+  transition: all 0.4s;
+
+}
+
+#submit:enabled{
+  box-shadow: 0 10px 20px 0px rgb(51, 143, 167, 0.7);
+}
+
+#submit:enabled:hover{
+  cursor: pointer;
+
+  box-shadow: 0 10px 20px 0px rgba(51, 51, 51, 0.7);
+}
+
+#results {
+  font-family: Poppins;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+#resultCont{
+  background-color: rgb(0, 126, 167, 0.2);
+}
+
+
+#congratsLabel {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #00171F;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 0px;
+  animation: fadeIn ease 1s;
+}
+
+.topBar {
+  position: -webkit-sticky;
+  position: sticky; /*stick progress bar to top of screen*/
+  background-color: teal;
+  top: 0;
+  padding: 0px;
+  z-index: 2;
+}
+
+.progress-bar {
+  padding: 3px;
+  z-index: 2;
+}
