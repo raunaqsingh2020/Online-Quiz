@@ -56,6 +56,21 @@ h2 {
   animation: fadeIn ease 1s;
 }
 
+h3 {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #00171F;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 0px;
+  animation: fadeIn ease 1s;
+}
+
 .container{
   width: 90%;  
   height: 85%;
